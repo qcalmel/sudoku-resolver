@@ -1,9 +1,8 @@
 const generateGridTest = () => {
-    let htmlGrid = ""
+    let sudokuGrid = ""
     for (let i = 0 ; i < 81 ; i++ ){
-        htmlGrid += `<div class="cell" id="${i}"><input type="text"></div>`
+        sudokuGrid += `<div class="cell" id="${i}"><input type="text"></div>`
     }
-    htmlGrid += ""
-    return htmlGrid
+    return sudokuGrid
 }
 document.getElementById("sudoku-grid").innerHTML = generateGridTest()
